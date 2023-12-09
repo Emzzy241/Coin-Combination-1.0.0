@@ -48,20 +48,20 @@ namespace CoinCombos.Tests
         
 
         
-        // // 4th Test: Returns dime value
-        // [TestMethod]
-        // public void GetDime_ReturnsDimeValue_Int()
-        // {
-        //     // Arrange 
-        //     int expectedDimeVal = 3;
-        //     Coins newCoin = new Coins(9, 3, 5, 7);
+        // 4th Test: Returns dime value
+        [TestMethod]
+        public void GetDime_ReturnsDimeValue_Int()
+        {
+            // Arrange 
+            int expectedDimeVal = 3;
+            Coins newCoin = new Coins(9, 3, 5, 7);
 
-        //     // Act
-        //     int returnedDimeVal = newCoin.Dime;
+            // Act
+            int returnedDimeVal = newCoin.Dime;
 
-        //     // Assert
-        //     Assert.AreEqual(expectedDimeVal, returnedDimeVal);
-        // }
+            // Assert
+            Assert.AreEqual(expectedDimeVal, returnedDimeVal);
+        }
         
         // // 5th Test: Sets dime value
         // [TestMethod]
