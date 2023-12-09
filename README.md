@@ -10,7 +10,7 @@
 * MS Test
 
 ## Description
-_In This Console app user enters a cent and app automatically returns the smallest number of quarters, dimes, nickels, and pennies needed to make that change_
+_c# app take an amount and return smallest number of quarters, dimes, nickels, and pennies_
 
 ## Setup/Installation
 * Open your git bash Terminal to Clone the Project with a (git clone _REPOSITORY_NAME_)
