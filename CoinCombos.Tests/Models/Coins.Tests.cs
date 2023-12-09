@@ -17,19 +17,19 @@ namespace CoinCombos.Tests
         }
 
         // 2nd Test: Returns quarter value
-        // [TestMethod]
-        // public void GetQuarter_ReturnsQuarterValue_Int()
-        // {
-        //     // Arrange 
-        //     int expectedQuarterVal = 4;
-        //     Coins newCoin = new Coins(4, 3, 5, 7);
+        [TestMethod]
+        public void GetQuarter_ReturnsQuarterValue_Int()
+        {
+            // Arrange 
+            int expectedQuarterVal = 4;
+            Coins newCoin = new Coins(4, 3, 5, 7);
 
-        //     // Act
-        //     int returnedQuarterVal = newCoin.Quarter;
+            // Act
+            int returnedQuarterVal = newCoin.Quarter;
 
-        //     // Assert
-        //     Assert.AreEqual(expectedQuarterVal, returnedQuarterVal);
-        // }
+            // Assert
+            Assert.AreEqual(expectedQuarterVal, returnedQuarterVal);
+        }
 
         // // 3rd Test: Sets quarter value
         // [TestMethod]
