@@ -141,18 +141,37 @@ namespace CoinCombos.Tests
             Assert.AreEqual(setPennyVal, newCoin.Penny);
         }
         
-        // 6th Test: Calcuates the coin combinations
-        // First path: if the change in cents is greater than 25
+        // 10th Test: Calcuates the coin combinations
+        // First path: if the change in cents is greater than or equal to 25
         // [TestMethod]
-        // public void CalculateCoinCombinationsRecursive_CalculatesIfCentsChangeIsGreaterThan25_Void()
+        // public void CalculateCoinCombinationsFirstPath_CalculatesIfCentsChangeIsGreaterThan25_Void()
         // {
         //     // Arrange 
-        //     int changeValue = 25;
-        //     Coins newCoin = new Coins(changeValue, 3, 5, 7);
+        //     Coins newCoin = new Coins(0, 3, 5, 7);
         //     int expectedChangeValInQuarter = 1;
+        //     int amountPennyToCheck = 25;
 
         //     // Act
-        //     int returnedChangeVal = newCoin.CalculateCoinCombinationsRecursive();
+
+        //     int returnedChangeVal = newCoin.CalculateCoinCombinations(amountPennyToCheck);
+
+        //     // Assert
+        //     Assert.AreEqual(expectedChangeValInQuarter, returnedChangeVal);
+        // }
+
+        // // 11th Test: Calcuates the coin combinations
+        // // Second path: if the change in cents is greater than or equal to 10
+        // [TestMethod]
+        // public void CalculateCoinCombinationsRecursiveSecondPath_CalculatesIfCentsChangeIsGreaterThan25_Void()
+        // {
+        //     // Arrange 
+        //     Coins newCoin = new Coins(0, 3, 5, 7);
+        //     int expectedChangeValInQuarter = 1;
+        //     int amountPennyToCheck = 10;
+
+        //     // Act
+
+        //     int returnedChangeVal = newCoin.CalculateCoinCombinationsRecursive(amountPennyToCheck);
 
         //     // Assert
         //     Assert.AreEqual(expectedChangeValInQuarter, returnedChangeVal);

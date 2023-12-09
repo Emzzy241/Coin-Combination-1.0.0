@@ -38,8 +38,46 @@ namespace CoinCombos.Models
             if(amount >= 25)
             {
                 Quarter++;
-                // amount -= 25;
+                amount -= 25; // 25 cents have been replaced with a quarter, so 25 needs to be removed from the initial amount supplied
+                // return Quarter;
+                CalculateCoinCombinationsRecursive(amount);
             }
+            else if(amount >= 10)
+            {
+                Dime++;
+                amount -= 10;
+                // return Dime;
+                CalculateCoinCombinationsRecursive(amount);
+            }
+            else if(amount >= 5)
+            {
+                Nickel++;
+                amount -= 5;
+                CalculateCoinCombinationsRecursive(amount);
+            }
+
+            else
+            {
+                // Finally, if the amount value has none of the above conditions in it... Just add the amount of cents(penny) left to the Penny field
+
+                Penny+= amount;
+            }
+        }
+
+
+        // The non-recursive method of calculating... In this method, I am not calling my method in itself again... I just want to calculate the change my user has left
+
+        public void CalculateCoinCombinations(int amount)
+        {
+            Quarter = amount / 25;
+            int remainder = amount % 5;
+
+            Dime = remainder / 10;
+            remainder = remainder % 10;
+
+            Nickel = remainder / 5;
+            
+            Penny = remainder % 5;
         }
 
         
