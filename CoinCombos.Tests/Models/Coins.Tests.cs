@@ -63,20 +63,20 @@ namespace CoinCombos.Tests
             Assert.AreEqual(expectedDimeVal, returnedDimeVal);
         }
         
-        // // 5th Test: Sets dime value
-        // [TestMethod]
-        // public void SetDime_SetsDimeValue_Void()
-        // {
-        //     // Arrange
-        //     int setDimeVal = 6;
-        //     Coins newCoin = new Coins(3, 4, 5, 9);
+        // 5th Test: Sets dime value
+        [TestMethod]
+        public void SetDime_SetsDimeValue_Void()
+        {
+            // Arrange
+            int setDimeVal = 6;
+            Coins newCoin = new Coins(3, 4, 5, 9);
 
-        //     // Act
-        //     newCoin.Dime = setDimeVal;
+            // Act
+            newCoin.Dime = setDimeVal;
 
-        //     // Assert
-        //     Assert.AreEqual(setDimeVal, newCoin.Dime);
-        // }
+            // Assert
+            Assert.AreEqual(setDimeVal, newCoin.Dime);
+        }
         
         
         // // 6th Test: Returns nickel value
