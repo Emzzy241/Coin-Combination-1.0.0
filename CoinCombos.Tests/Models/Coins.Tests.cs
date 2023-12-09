@@ -32,19 +32,19 @@ namespace CoinCombos.Tests
         }
 
         // // 3rd Test: Sets quarter value
-        // [TestMethod]
-        // public void SetQuarter_SetsQuarterValue_Void()
-        // {
-        //     // Arrange
-        //     int setQuarterVal = 4;
-        //     Coins newCoin = new Coins(6, 4, 5, 9);
+        [TestMethod]
+        public void SetQuarter_SetsQuarterValue_Void()
+        {
+            // Arrange
+            int setQuarterVal = 4;
+            Coins newCoin = new Coins(6, 4, 5, 9);
 
-        //     // Act
-        //     newCoin.Quarter = setQuarterVal;
+            // Act
+            newCoin.Quarter = setQuarterVal;
 
-        //     // Assert
-        //     Assert.AreEqual(setQuarterVal, newCoin.Quarter);
-        // }
+            // Assert
+            Assert.AreEqual(setQuarterVal, newCoin.Quarter);
+        }
         
 
         
