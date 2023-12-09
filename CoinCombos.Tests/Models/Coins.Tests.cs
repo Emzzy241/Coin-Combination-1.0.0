@@ -110,20 +110,20 @@ namespace CoinCombos.Tests
         }
         
         
-        // // 8th Test: Returns penny value
-        // [TestMethod]
-        // public void GetPenny_ReturnsPennyValue_Int()
-        // {
-        //     // Arrange 
-        //     Coins newCoin = new Coins(1, 3, 5, 7);
-        //     int expectedPennyVal = 0;
+        // 8th Test: Returns penny value
+        [TestMethod]
+        public void GetPenny_ReturnsPennyValue_Int()
+        {
+            // Arrange 
+            Coins newCoin = new Coins(1, 3, 5, 7);
+            int expectedPennyVal = 0;
 
-        //     // Act
-        //     int returnedPennyVal = newCoin.Penny;
+            // Act
+            int returnedPennyVal = newCoin.Penny;
 
-        //     // Assert
-        //     Assert.AreEqual(expectedPennyVal, returnedPennyVal);
-        // }
+            // Assert
+            Assert.AreEqual(expectedPennyVal, returnedPennyVal);
+        }
 
         
         // 9th Test: Sets nickel value
