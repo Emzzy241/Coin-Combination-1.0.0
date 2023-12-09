@@ -116,7 +116,7 @@ namespace CoinCombos.Tests
         {
             // Arrange 
             Coins newCoin = new Coins(1, 3, 5, 7);
-            int expectedPennyVal = 0;
+            int expectedPennyVal = 7;
 
             // Act
             int returnedPennyVal = newCoin.Penny;
@@ -127,19 +127,19 @@ namespace CoinCombos.Tests
 
         
         // 9th Test: Sets nickel value
-        // [TestMethod]
-        // public void SetPenny_SetsPennyValue_Void()
-        // {
-        //     // Arrange
-        //     int setPennyVal = 10;
-        //     Coins newCoin = new Coins(3, 4, 5, 9);
+        [TestMethod]
+        public void SetPenny_SetsPennyValue_Void()
+        {
+            // Arrange
+            int setPennyVal = 10;
+            Coins newCoin = new Coins(3, 4, 5, 9);
 
-        //     // Act
-        //     newCoin.Penny = setPennyVal;
+            // Act
+            newCoin.Penny = setPennyVal;
 
-        //     // Assert
-        //     Assert.AreEqual(setPennyVal, newCoin.Penny);
-        // }
+            // Assert
+            Assert.AreEqual(setPennyVal, newCoin.Penny);
+        }
         
         // 6th Test: Calcuates the coin combinations
         // First path: if the change in cents is greater than 25

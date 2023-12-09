@@ -20,7 +20,7 @@ namespace CoinCombos.Models
         public int Quarter { get; set; }
         public int Dime { get; set; }
         public int Nickel { get; set; }
-        public int Penny { get; }
+        public int Penny { get; set; }
 
         public Coins(int myQuarter, int myDime, int myNickel, int myPenny)
         {
