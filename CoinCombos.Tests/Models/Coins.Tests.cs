@@ -79,20 +79,20 @@ namespace CoinCombos.Tests
         }
         
         
-        // // 6th Test: Returns nickel value
-        // [TestMethod]
-        // public void GetNickel_ReturnsNickelValue_Int()
-        // {
-        //     // Arrange 
-        //     Coins newCoin = new Coins(1, 3, 5, 7);
-        //     int expectedNickelVal = 5;
+        // 6th Test: Returns nickel value
+        [TestMethod]
+        public void GetNickel_ReturnsNickelValue_Int()
+        {
+            // Arrange 
+            Coins newCoin = new Coins(1, 3, 5, 7);
+            int expectedNickelVal = 5;
 
-        //     // Act
-        //     int returnedNickelVal = newCoin.Nickel;
+            // Act
+            int returnedNickelVal = newCoin.Nickel;
 
-        //     // Assert
-        //     Assert.AreEqual(expectedNickelVal, returnedNickelVal);
-        // }
+            // Assert
+            Assert.AreEqual(expectedNickelVal, returnedNickelVal);
+        }
         
         // // 7th Test: Sets nickel value
         // [TestMethod]
