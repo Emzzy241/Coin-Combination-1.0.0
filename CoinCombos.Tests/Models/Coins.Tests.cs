@@ -94,20 +94,20 @@ namespace CoinCombos.Tests
             Assert.AreEqual(expectedNickelVal, returnedNickelVal);
         }
         
-        // // 7th Test: Sets nickel value
-        // [TestMethod]
-        // public void SetNickel_SetsNickelValue_Void()
-        // {
-        //     // Arrange
-        //     int setNickelVal = 6;
-        //     Coins newCoin = new Coins(3, 4, 5, 9);
+        // 7th Test: Sets nickel value
+        [TestMethod]
+        public void SetNickel_SetsNickelValue_Void()
+        {
+            // Arrange
+            int setNickelVal = 6;
+            Coins newCoin = new Coins(3, 4, 5, 9);
 
-        //     // Act
-        //     newCoin.Nickel = setNickelVal;
+            // Act
+            newCoin.Nickel = setNickelVal;
 
-        //     // Assert
-        //     Assert.AreEqual(setNickelVal, newCoin.Nickel);
-        // }
+            // Assert
+            Assert.AreEqual(setNickelVal, newCoin.Nickel);
+        }
         
         
         // // 8th Test: Returns penny value
