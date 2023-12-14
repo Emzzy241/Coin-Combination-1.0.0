@@ -10,7 +10,7 @@
 * MS Test
 
 ## Description
-_c# app take an amount and return smallest number of quarters, dimes, nickels, and pennies_
+_The C# console app take an amount in cents and returns the smallest number of quarters, dimes, nickels, and pennies._
 
 ## Setup/Installation
 * Open your git bash Terminal to Clone the Project with a (git clone _REPOSITORY_NAME_)
